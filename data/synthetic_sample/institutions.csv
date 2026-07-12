@@ -1,0 +1,10 @@
+institution_id,institution_name,city,country,latitude,longitude,source
+Inst_I001,Example University Alpha,Example City One,Exampleland,10.0000,20.0000,synthetic
+Inst_I002,Example Medical Center Beta,Example City Two,Exampleland,11.0000,21.0000,synthetic
+Inst_I003,Example Research Institute Gamma,Example City Three,Samplestan,12.0000,22.0000,synthetic
+Inst_I004,Example Innovation Lab Delta,Example City Four,Exampleland,13.0000,23.0000,synthetic
+Inst_I005,Example Cityless Institute,,Exampleland,14.0000,24.0000,synthetic
+Inst_I006,Example Countryless College,Example City Six,,15.0000,25.0000,synthetic
+Inst_I007,Example Coordinate Error Lab,Example City Seven,Exampleland,95.0000,195.0000,synthetic
+Inst_I008,Example Springfield Campus North,Springfield,Exampleland,16.0000,26.0000,synthetic
+Inst_I009,Example Springfield Campus South,Springfield,Samplestan,17.0000,27.0000,synthetic

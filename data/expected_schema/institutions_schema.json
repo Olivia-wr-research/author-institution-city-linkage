@@ -1,0 +1,12 @@
+{
+  "description": "Synthetic institution metadata with city-country coordinates.",
+  "required_fields": [
+    "institution_id",
+    "institution_name",
+    "city",
+    "country",
+    "latitude",
+    "longitude",
+    "source"
+  ]
+}

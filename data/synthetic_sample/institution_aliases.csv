@@ -1,0 +1,5 @@
+institution_id,official_name,alias_name,normalized_name,synthetic_ror_id,city,country,city_country_key
+Inst_I001,Example University Alpha,Example Univ Alpha,example university alpha,ror.example.001,Example City One,Exampleland,example city one|exampleland
+Inst_I002,Example Medical Center Beta,Beta Medical Centre,example medical center beta,ror.example.002,Example City Two,Exampleland,example city two|exampleland
+Inst_I008,Example Springfield Campus North,Springfield Campus,example springfield campus north,ror.example.008,Springfield,Exampleland,springfield|exampleland
+Inst_I009,Example Springfield Campus South,Springfield Campus,example springfield campus south,ror.example.009,Springfield,Samplestan,springfield|samplestan

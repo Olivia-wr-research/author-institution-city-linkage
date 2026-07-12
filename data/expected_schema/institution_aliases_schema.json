@@ -1,0 +1,13 @@
+{
+  "description": "Synthetic deterministic alias table.",
+  "required_fields": [
+    "institution_id",
+    "official_name",
+    "alias_name",
+    "normalized_name",
+    "synthetic_ror_id",
+    "city",
+    "country",
+    "city_country_key"
+  ]
+}

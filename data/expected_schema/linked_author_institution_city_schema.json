@@ -1,0 +1,26 @@
+{
+  "description": "Pipeline output for resolvable author-work-institution rows after configured deduplication.",
+  "required_fields": [
+    "record_id",
+    "author_id",
+    "work_id",
+    "publication_year",
+    "institution_id",
+    "institution_name",
+    "city",
+    "country",
+    "city_country_key",
+    "latitude",
+    "longitude",
+    "source",
+    "match_status_standardized",
+    "confidence_score",
+    "linkage_valid",
+    "geocoding_valid",
+    "duplicate_flag",
+    "source_conflict_flag",
+    "multi_affiliation_flag",
+    "qa_status",
+    "qa_notes"
+  ]
+}

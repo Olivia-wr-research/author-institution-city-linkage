@@ -1,0 +1,5 @@
+source_type,redacted_source_path,exclusion_reason,risk_category,public_alternative
+raw_or_redacted_api_response,<PRIVATE_LOCAL_SOURCE_B>/02_data/metadata/.../raw_responses_redacted/*.json,Not needed for public demo; may include licensed/API response content,license/privacy,synthetic_sample/*.csv
+scopus_collectors_original,<PRIVATE_LOCAL_SOURCE_A>/scopus_*,Original scripts flagged for credential/licensing review; not copied verbatim,credential/license,sanitized modules in src/
+manifest_only_outputs,<PRIVATE_LOCAL_SOURCE_B>/04_outputs/data/author_affiliation_linkage/...,Derived from restricted/local workflows; not copied,license/privacy,docs/data_dictionary.md
+unpublished_project_materials,<PRIVATE_LOCAL_SOURCE_B>/05_manuscript or local drafts,Not part of code repository candidate,ownership/submission,README and docs only

@@ -1,0 +1,8 @@
+{
+  "input_dir": "data/synthetic_sample",
+  "output_dir": "outputs/example_outputs",
+  "network_access": false,
+  "minimum_confidence_score": 0.75,
+  "deduplicate_records": true,
+  "require_valid_coordinates": true
+}

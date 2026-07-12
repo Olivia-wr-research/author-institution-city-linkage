@@ -1,0 +1,3 @@
+record_id,author_id,work_id,institution_id,source_a_city,source_a_country,source_b_city,source_b_country,expected_conflict_flag,conflict_note
+R017,Author_A015,Work_W013,Inst_I003,Example City Three,Samplestan,Example City Three,Samplestan,false,sources agree
+R018,Author_A016,Work_W014,Inst_I004,Example City Four,Exampleland,Example City Nine,Exampleland,true,city differs across synthetic sources

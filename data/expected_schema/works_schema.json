@@ -1,0 +1,9 @@
+{
+  "description": "Synthetic work metadata.",
+  "required_fields": [
+    "work_id",
+    "publication_year",
+    "title_stub",
+    "source"
+  ]
+}

@@ -1,0 +1,5 @@
+metric,value
+source_comparison_rows,2
+source_agreement_rows,1
+source_conflict_rows,1
+source_conflict_share,0.5000

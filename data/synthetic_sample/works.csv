@@ -1,0 +1,15 @@
+work_id,publication_year,title_stub,source
+Work_W001,2020,Synthetic exact match example,synthetic
+Work_W002,2020,Synthetic missing author example,synthetic
+Work_W003,2021,Synthetic missing institution id example,synthetic
+Work_W004,2021,Synthetic missing institution metadata example,synthetic
+Work_W005,2021,Synthetic missing city example,synthetic
+Work_W006,2022,Synthetic missing country example,synthetic
+Work_W007,2022,Synthetic invalid coordinate example,synthetic
+Work_W008,2022,Synthetic low confidence example,synthetic
+Work_W009,2022,Synthetic duplicate example,synthetic
+Work_W010,2023,Synthetic multi affiliation example,synthetic
+Work_W011,2023,Synthetic same city name example A,synthetic
+Work_W012,2023,Synthetic same city name example B,synthetic
+Work_W013,2023,Synthetic source agreement example,synthetic
+Work_W014,2023,Synthetic source conflict example,synthetic

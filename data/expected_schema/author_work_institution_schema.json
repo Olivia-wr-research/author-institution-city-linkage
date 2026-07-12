@@ -1,0 +1,13 @@
+{
+  "description": "Synthetic author-work-institution source records.",
+  "required_fields": [
+    "record_id",
+    "author_id",
+    "work_id",
+    "institution_id",
+    "author_position",
+    "source",
+    "match_status",
+    "confidence_score"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Coverage diagnostics generated from synthetic pipeline outputs.",
+  "required_fields": [
+    "metric",
+    "value"
+  ]
+}

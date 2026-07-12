@@ -1,0 +1,6 @@
+name: author-institution-city-linkage
+channels:
+  - defaults
+dependencies:
+  - python>=3.10
+  - pytest

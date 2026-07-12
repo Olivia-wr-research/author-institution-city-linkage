@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "Author-Institution Linkage and Geocoding Feasibility Audit"
+authors:
+  - family-names: Wang
+    given-names: Ran
+message: "Please cite this software using the metadata in this file. Add repository-code and date-released after the GitHub repository is created."
+version: "0.1.0"

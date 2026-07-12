@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+outputs/example_outputs/*
+!outputs/example_outputs/.gitkeep
+*.sqlite
+*.db
+raw/
+private/
+secrets/
+.env
+.env.*

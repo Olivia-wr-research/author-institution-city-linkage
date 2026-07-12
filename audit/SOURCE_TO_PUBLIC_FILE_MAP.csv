@@ -1,0 +1,5 @@
+private_source_file,private_source_path_redacted,public_file_or_section,adoption_reason,verbatim_copy,modification_summary
+scopus_city_year_collector_portable.py,<PRIVATE_SOURCE_SCOPUS_COLLECTOR>,src/validation/coverage.py; scripts/run_example_pipeline.py,Reviewed for city-year and coverage-diagnostic workflow concepts.,FALSE,Rebuilt as no-network synthetic coverage diagnostics.
+scopus_exact_author_paper_institution_v3_checked.py,<PRIVATE_SOURCE_LINKAGE_SCRIPT>,src/linkage/author_institution_linkage.py,Reviewed for author-work-institution parsing and exclusion logic concepts.,FALSE,Rebuilt as synthetic identifier-linkage and QA logic.
+scopus_openalex_author_affiliation_local_smoke_test_agent_run.py,<PRIVATE_SOURCE_SMOKE_TEST>,scripts/run_smoke_test.py; tests/,Reviewed for smoke-test framing.,FALSE,Rebuilt as no-network schema and pipeline smoke tests.
+author_affiliation_linkage_feasibility audit scripts,<PRIVATE_SOURCE_FEASIBILITY_AUDIT>,docs/measurement_boundaries.md; README.md,Reviewed for measurement-boundary framing.,FALSE,Summarized without copying private code or results.

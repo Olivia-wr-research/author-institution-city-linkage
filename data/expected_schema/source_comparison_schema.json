@@ -1,0 +1,15 @@
+{
+  "description": "Synthetic source agreement/conflict table.",
+  "required_fields": [
+    "record_id",
+    "author_id",
+    "work_id",
+    "institution_id",
+    "source_a_city",
+    "source_a_country",
+    "source_b_city",
+    "source_b_country",
+    "expected_conflict_flag",
+    "conflict_note"
+  ]
+}

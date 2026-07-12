@@ -1,0 +1,7 @@
+{
+  "description": "Source consistency/conflict summary generated from synthetic source comparison rows.",
+  "required_fields": [
+    "metric",
+    "value"
+  ]
+}
