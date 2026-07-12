@@ -170,8 +170,8 @@ The source code, documentation, schemas, and fully synthetic example materials i
 
 ## Citation
 
-See `CITATION.cff`. Add the final repository URL and release date after the GitHub repository is created.
+If you use this software, please cite it using the metadata provided in `CITATION.cff`.
 
 ## Release status
 
-`READY_FOR_GITHUB_PUBLICATION`. The remaining administrative step is to create the repository and add its final URL and release date to `CITATION.cff`.
+Version 0.1.0 is the initial public release of this synthetic demonstration and measurement-audit framework.
