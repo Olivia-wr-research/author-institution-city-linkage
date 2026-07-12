@@ -5,3 +5,6 @@ authors:
     given-names: Ran
 message: "Please cite this software using the metadata in this file. Add repository-code and date-released after the GitHub repository is created."
 version: "0.1.0"
+license: "MIT"
+repository-code: "https://github.com/Olivia-wr-research/author-institution-city-linkage"
+date-released: "2026-07-13"
