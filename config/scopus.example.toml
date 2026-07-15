@@ -1,0 +1,15 @@
+# Public-safe example configuration.
+# Demos use mock transport and synthetic fixtures by default.
+
+[transport]
+mode = "mock"
+network_access = false
+
+[paths]
+input_dir = "data/synthetic"
+output_dir = "outputs/scopus_demo"
+
+[city_year]
+start_year = 2022
+end_year = 2024
+document_types = ["ar", "re"]

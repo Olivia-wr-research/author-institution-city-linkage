@@ -1,0 +1,5 @@
+author_id,display_name,home_country
+SYNTH_AUTHOR_001,Synthetic Author Alpha,Exampleland
+SYNTH_AUTHOR_002,Synthetic Author Beta,Samplestan
+SYNTH_AUTHOR_003,Synthetic Author Gamma,Exampleland
+,Synthetic Author MissingId,Nowheria

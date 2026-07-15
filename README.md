@@ -1,177 +1,138 @@
-# Author-Institution Linkage and Geocoding Feasibility Audit
+# Scopus Research Data Toolkit
 
-A reproducible synthetic demonstration and measurement audit framework for author-institution-city linkage.
+Author–institution linkage, publication panels, city-year controls, cognitive proximity, and data-quality audits.
 
-This repository is a **public demonstration**. It is separate from the author's **private research workflow**, which may use restricted bibliographic data, private audit logs, and non-public validation materials. Restricted source data are not redistributed here. Future optional source adapters for Scopus, OpenAlex, ROR, or other services would require separate license, credential, and ethics review.
+## Project Overview
 
-## Project overview
+This repository is an independent research-code toolkit organized around public-safe, reusable Scopus-oriented data workflows. It contains only synthetic demonstration data, deterministic expected outputs, tests, and documentation.
 
-The repository demonstrates how publication-level author-institution records can be checked, linked, geocoded, and audited before they are used in research on scientific geography or mobility. It is designed as a transparent measurement scaffold rather than a full-scale data collector.
+It is not an Elsevier or Scopus official tool. It does not include real Scopus data, real API responses, real authors, real papers, credentials, publication-level results, or manuscript outputs.
 
-## Why linkage measurement matters
+## Why The Repository Is Organized Around Scopus
 
-Author-affiliation data are common in bibliographic databases, but their meaning is limited. A paper-level affiliation city is not automatically equivalent to a focal scientist's employment city, and an author-institution linkage is not automatically a verified career-mobility event. The workflow therefore separates identifier linkage, institution-city attribution, record-level QA, and coverage diagnostics.
+The shared lifecycle is Scopus-style bibliographic data processing: parse API-shaped records, normalize author-paper-affiliation links, build publication panels, aggregate city-year publication controls, compare offline source coverage, and audit measurement quality.
 
-## Public and private workflow boundary
+## Module Map
 
-Public demonstration:
+- `scopus_toolkit.author_index`: author input validation and synthetic candidate normalization.
+- `scopus_toolkit.publications`: Scopus-style search and abstract parsing plus author-paper bipartite links.
+- `scopus_toolkit.affiliations`: paper-affiliation parsing, normalization, and offline Scopus-OpenAlex comparison.
+- `scopus_toolkit.city_year`: query construction, mock pagination, retry state, aggregation, and lagged controls.
+- `scopus_toolkit.proximity`: subject-count vectors and cosine cognitive proximity.
+- `scopus_toolkit.quality`: coverage, duplicates, validation, manifests, and SQLite resume state.
 
-- synthetic source records;
-- local schema validation;
-- deterministic institution alias normalization;
-- identifier-based linkage;
-- city-country validation;
-- record-level QA;
-- reproducible example outputs.
+## Repository Structure
 
-Private or future optional workflow:
-
-- licensed Scopus or Elsevier data access;
-- real OpenAlex/ROR source adapters;
-- credential management;
-- scientist-level validation;
-- large-scale API collection;
-- non-public drafts or project-specific results.
-
-## What the repository demonstrates
-
-- Config-driven synthetic pipeline execution.
-- Schema validation using JSON files under `data/expected_schema/` as the authoritative schema source.
-- Handling of missing author, work, and institution identifiers.
-- Distinguishing linkage validity from geocoding completeness.
-- Low-confidence, duplicate, multi-affiliation, and source-conflict flags.
-- Same-name city disambiguation by city-country key.
-- Fixed expected outputs for review and tests.
-
-## What it does not demonstrate
-
-- It does not perform live Scopus, OpenAlex, ROR, or other API collection.
-- It does not include real scientists, papers, institutions, or career histories.
-- It does not redistribute restricted source data.
-- It does not infer employment or career mobility from paper affiliations.
-- It does not claim large-scale empirical coverage or research findings.
-
-## Synthetic data design
-
-All sample records in `data/synthetic_sample/` are fictional. They cover exact matches, missing identifiers, nonexistent works and institutions, missing city/country fields, invalid coordinates, low confidence, duplicates, multi-institution authorship, same-name cities in different countries, and source agreement/conflict cases.
-
-## Data model
-
-Core synthetic inputs:
-
-- `author_work_institution.csv`
-- `works.csv`
-- `institutions.csv`
-- `institution_aliases.csv`
-- `source_comparison.csv`
-
-The alias example demonstrates deterministic normalization only and is not a substitute for validated entity resolution.
-
-## Configuration
-
-The pipeline reads JSON configuration:
-
-```bash
-python scripts/run_example_pipeline.py --config config/config.example.json
+```text
+config/                 compatible synthetic pipeline config
+data/synthetic/          synthetic Scopus-style fixtures
+data/synthetic_sample/   original v0.1.0 synthetic linkage demo
+examples/expected_outputs/ deterministic outputs for demos and tests
+src/scopus_toolkit/      v0.2.0 toolkit package
+src/linkage/             preserved v0.1.0 compatibility modules
+scripts/                 compatible and toolkit demo entry points
+tests/                   pytest suite
+docs/                    architecture, boundaries, schemas, reproducibility
+audit/                   release review records
 ```
-
-Configuration controls input/output directories, minimum confidence threshold, duplicate handling, and coordinate validity requirements.
 
 ## Installation
 
-Python 3.10 or later is recommended.
+Pip:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-The runtime pipeline uses the Python standard library. `pytest` is used for tests.
+Conda:
 
-## Quick start
+```bash
+conda env create -f environment.yml
+conda activate scopus-research-data-toolkit
+```
+
+Editable install:
+
+```bash
+python -m pip install -e ".[test]"
+```
+
+## Quick Start
+
+```bash
+python -m scopus_toolkit --help
+python -m scopus_toolkit all-demo
+python -m pytest -q
+```
+
+Compatible v0.1.0 commands remain available:
 
 ```bash
 python scripts/run_smoke_test.py
 python scripts/run_example_pipeline.py --config config/config.example.json
+```
+
+## Author-Institution Linkage
+
+The toolkit parses paper-level author-affiliation links with explicit fields for source system, work ID, author ID, institution ID, city, country, affiliation position, missing fields, parser status, and QA notes. A Scopus paper affiliation is not treated as verified employment.
+
+## Author-Publication Pipeline
+
+Synthetic author records are validated, Scopus-style search entries are normalized, publication years are parsed, and author-paper bipartite links are deduplicated. The demo does not search for real people or claim manual identity verification.
+
+## City-Year Publication Controls
+
+The city-year module builds escaped Scopus-style queries, applies article/review filters, runs deterministic mock pagination and retry behavior, aggregates publication counts, fills missing years, and builds strict pre-event lagged controls.
+
+## Cognitive Proximity
+
+Cognitive proximity is computed as cosine similarity over synthetic city-period-subject count vectors. It is a measurement based on subject distributions and must not be interpreted as causal evidence.
+
+## Scopus-OpenAlex Source Comparison
+
+OpenAlex is included only as an offline comparison source for author-affiliation fields. Statuses include `agreement`, `partial_agreement`, `scopus_only`, `openalex_only`, `institution_conflict`, `geography_conflict`, and `insufficient_information`. Agreement means synthetic fields match; it is not ground truth.
+
+## Synthetic Data
+
+All records, identifiers, institutions, cities, publication counts, subject profiles, and API-style responses under `data/synthetic/` are synthetic, non-resolving demonstration data.
+
+## Output Schemas
+
+Toolkit demos create normalized author records, author-paper links, author-institution links, institution-city mappings, source comparisons, city-year counts, failures, manifests, lagged controls, cognitive proximity long and matrix outputs, and run summaries.
+
+## Testing
+
+```bash
+python -m compileall src scripts
 python -m pytest -q
 ```
 
-## Example outputs
+The tests do not access Scopus, OpenAlex, or any network resource.
 
-Fixed synthetic review outputs are stored in `examples/expected_outputs/`. Runtime outputs are written to `outputs/example_outputs/`, which is ignored by Git.
+## Reproducibility
 
-Expected output files:
+Expected outputs are deterministic. The demos use fixed synthetic fixtures, fixed row ordering, fixed run IDs, no random numbers, and no current timestamps.
 
-- `linked_author_institution_city.csv`
-- `record_level_audit.csv`
-- `coverage_summary.csv`
-- `source_comparison_summary.csv`
+## Scopus API And Data Boundaries
 
-## Quality-control logic
+Default demos use `MockTransport` only. Optional live Scopus access is deferred in v0.2.0. Users are responsible for complying with applicable API, license, privacy, and data-access terms.
 
-The pipeline records:
+## Measurement Boundaries
 
-- `linkage_valid`
-- `geocoding_valid`
-- `duplicate_flag`
-- `source_conflict_flag`
-- `multi_affiliation_flag`
-- `qa_status`
-- `qa_notes`
+Publication affiliations are paper addresses, not verified employment institutions. Paper cities are not career-mobility destinations. Source agreement is not factual verification.
 
-This distinguishes linkage success with incomplete geocoding from linkage failure, low-confidence records, duplicate records, and source conflicts.
+## Privacy And Security
 
-## Workflow
-
-```mermaid
-flowchart TD
-    A[Synthetic source records] --> B[Schema validation]
-    B --> C[Identifier linkage]
-    C --> D[Institution normalization]
-    D --> E[City-country validation]
-    E --> F[Record-level QA]
-    F --> G[Coverage diagnostics]
-```
-
-## Measurement boundaries
-
-See `docs/measurement_boundaries.md`. The central boundary is that publication affiliation metadata provide evidence about paper-level institutional addresses, not direct proof of verified employment or career moves.
+The repository does not contain real credentials, private paths, API caches, raw API responses, real DOI/EID/ORCID/Scopus Author IDs, private email addresses, unpublished model coefficients, tables, or figures.
 
 ## Limitations
 
-This is a reproducible synthetic demonstration. It is not a production entity-resolution system, does not run fuzzy matching, and does not validate real author identities. Results from this repository should not be interpreted as empirical findings about real scientists, institutions, or mobility events.
-
-## Reproducibility scope
-
-The included scripts reproduce the synthetic example only. They do not access external APIs and do not require credentials.
-
-## Repository structure
-
-```text
-config/                 JSON configuration example
-data/                   synthetic sample and authoritative schema JSON
-examples/expected_outputs/ fixed synthetic expected outputs
-src/                    public-candidate Python modules
-scripts/                runnable smoke test and example pipeline
-tests/                  pytest tests
-docs/                   measurement and reproducibility notes
-audit/                  release-review logs and source mappings
-outputs/example_outputs/ runtime outputs ignored by Git
-```
-
-## Author contribution
-
-Ran Wang developed the research design, measurement framework, and original feasibility-audit workflow. The public repository was restructured with AI-assisted coding and documentation and subsequently reviewed and validated by the author.
-
-AI assistance does not replace the author's responsibility for code correctness, research claims, licensing, or public-release decisions. Ran Wang retains responsibility for the released repository and has confirmed that the included project logic and materials are not copied from an advisor, collaborator, or third-party codebase.
-
-## License
-
-The source code, documentation, schemas, and fully synthetic example materials in this repository are released under the MIT License. See `LICENSE`. Restricted bibliographic data, API responses, raw scientist records, and commercial database exports are not included and are not licensed by this repository.
+This is a reusable synthetic toolkit candidate, not a production Scopus collector and not an empirical database. Live adapter behavior, licensed data handling, and project-specific validation remain outside this public release.
 
 ## Citation
 
-If you use this software, please cite it using the metadata provided in `CITATION.cff`.
+Use `CITATION.cff`.
 
-## Release status
+## Author
 
-Version 0.1.0 is the initial public release of this synthetic demonstration and measurement-audit framework.
+Ran Wang.

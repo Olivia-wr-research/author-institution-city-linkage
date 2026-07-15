@@ -1,0 +1,8 @@
+city,country,subject,scenario
+SYNTH_CITY_ALPHA,Exampleland,COMP,
+SYNTH_CITY_BETA,Samplestan,MEDI,MULTIPAGE_CITY
+SYNTH_CITY_EMPTY,Exampleland,COMP,EMPTY_CITY
+SYNTH_CITY_RETRY,Exampleland,ENGI,RETRY_429
+SYNTH_CITY_FAIL,Nowheria,COMP,PERMANENT_FAIL
+Springfield,Exampleland,COMP,
+Springfield,Samplestan,COMP,

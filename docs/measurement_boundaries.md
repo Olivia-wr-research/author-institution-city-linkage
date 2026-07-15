@@ -1,11 +1,11 @@
 # Measurement Boundaries
 
-Publication affiliation evidence and career-mobility evidence are not interchangeable.
+An affiliation in this repository means a paper-level author-affiliation address parsed from a bibliographic record. It is not a verified employment institution.
 
-- A paper-level affiliation city is not automatically equivalent to a focal scientist's employment city.
-- An author-institution linkage is not automatically a verified career-mobility event.
-- Multiple affiliations on one paper may reflect collaboration, visiting status, honorary affiliation, reporting conventions, or institutional reporting practices.
-- City geocoding should preserve country context to avoid same-name city collisions.
-- Licensed source databases may permit analysis but not redistribution of raw records.
+An institution city is an address field attached to a publication record. It is not a scientist's residence, workplace history, or mobility destination.
 
-The public example reports linkage and geocoding coverage only. It does not infer career transitions.
+The source-comparison module reports field-level agreement or disagreement between synthetic Scopus-shaped and OpenAlex-shaped records. It does not identify a correct source.
+
+Cognitive proximity is cosine similarity over subject-count vectors. It is a descriptive measurement and not a causal estimate.
+
+The public example reports linkage, coverage, missingness, and consistency checks only. It does not infer career transitions or research findings.

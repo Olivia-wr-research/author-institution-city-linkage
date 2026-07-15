@@ -1,0 +1,5 @@
+source_author_id,normalized_author_key,display_name,home_country,author_id_status,duplicate_author_flag,qa_notes
+SYNTH_AUTHOR_001,synth_author_001,Synthetic Author Alpha,Exampleland,synthetic_valid,false,synthetic_author_record
+SYNTH_AUTHOR_002,synth_author_002,Synthetic Author Beta,Samplestan,synthetic_valid,false,synthetic_author_record
+SYNTH_AUTHOR_003,synth_author_003,Synthetic Author Gamma,Exampleland,synthetic_valid,false,synthetic_author_record
+,synthetic_author_missingid,Synthetic Author MissingId,Nowheria,missing,false,synthetic_author_record

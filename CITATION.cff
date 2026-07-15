@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
-title: "Author-Institution Linkage and Geocoding Feasibility Audit"
+title: "Scopus Research Data Toolkit"
 authors:
   - family-names: Wang
     given-names: Ran
-version: "0.1.0"
-date-released: 2026-07-13
+version: "0.2.0"
+date-released: 2026-07-15
 repository-code: "https://github.com/Olivia-wr-research/author-institution-city-linkage"
 license: "MIT"

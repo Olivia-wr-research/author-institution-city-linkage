@@ -1,0 +1,14 @@
+{
+  "run_id": "SYNTHETIC_RUN_2026_07_15",
+  "statement": "All records, identifiers, institutions, cities, publication counts, subject profiles, and API-style responses in this directory are synthetic, non-resolving demonstration data.",
+  "network_access": false,
+  "fixtures": [
+    "authors.csv",
+    "cities.csv",
+    "event_candidates.csv",
+    "subject_counts.csv",
+    "scopus_search_fixture.json",
+    "scopus_abstract_fixture.json",
+    "openalex_work_fixture.json"
+  ]
+}

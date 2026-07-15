@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+from scopus_toolkit.cli import main
+
+if __name__ == "__main__":
+    raise SystemExit(main(["all-demo"]))

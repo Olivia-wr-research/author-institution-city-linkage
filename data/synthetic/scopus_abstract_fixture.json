@@ -1,0 +1,60 @@
+{
+  "abstracts-retrieval-response": {
+    "coredata": {
+      "eid": "2-s2.0-SYNTHETIC001",
+      "dc:identifier": "SCOPUS_ID:SYNTH_WORK_001",
+      "prism:doi": "10.0000/synthetic-example-001"
+    },
+    "authors": {
+      "author": [
+        {
+          "@auid": "SYNTH_AUTHOR_001",
+          "ce:indexed-name": "Synthetic Author Alpha",
+          "affiliation": [
+            {"@id": "SYNTH_INST_001"},
+            {"@id": "SYNTH_INST_002"}
+          ]
+        },
+        {
+          "@auid": "SYNTH_AUTHOR_002",
+          "ce:indexed-name": "Synthetic Author Beta",
+          "affiliation": {"@id": "SYNTH_INST_003"}
+        },
+        {
+          "ce:indexed-name": "Synthetic Author MissingId",
+          "affiliation": {"@id": "SYNTH_INST_MISSING_CITY"}
+        },
+        {
+          "@auid": "SYNTH_AUTHOR_001",
+          "ce:indexed-name": "Synthetic Author Alpha",
+          "affiliation": {"@id": "SYNTH_INST_001"}
+        }
+      ]
+    },
+    "affiliation": [
+      {
+        "@id": "SYNTH_INST_001",
+        "affilname": "Synthetic Alpha Institute",
+        "affiliation-city": "SYNTH_CITY_ALPHA",
+        "affiliation-country": "Exampleland"
+      },
+      {
+        "@id": "SYNTH_INST_002",
+        "affilname": "Synthetic Alpha Institute Campus",
+        "affiliation-city": "SYNTH_CITY_ALPHA",
+        "affiliation-country": "Exampleland"
+      },
+      {
+        "@id": "SYNTH_INST_003",
+        "affilname": "Synthetic Beta Laboratory",
+        "affiliation-city": "SYNTH_CITY_BETA",
+        "affiliation-country": "Samplestan"
+      },
+      {
+        "@id": "SYNTH_INST_MISSING_CITY",
+        "affilname": "Synthetic Missing City Institute",
+        "affiliation-country": "Nowheria"
+      }
+    ]
+  }
+}
