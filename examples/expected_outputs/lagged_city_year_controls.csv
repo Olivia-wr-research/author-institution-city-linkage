@@ -1,0 +1,4 @@
+candidate_id,city,country,event_year,lag_window,lagged_publication_count_sum,lagged_publication_count_mean,qa_notes
+SYNTH_EVENT_001,SYNTH_CITY_ALPHA,Exampleland,2024,t-1_to_t-2,2,1.0000,strict_pre_event_window
+SYNTH_EVENT_002,SYNTH_CITY_BETA,Samplestan,2024,t-1_to_t-2,6,3.0000,strict_pre_event_window
+SYNTH_EVENT_003,SYNTH_CITY_EMPTY,Exampleland,2024,t-1_to_t-2,0,0.0000,strict_pre_event_window

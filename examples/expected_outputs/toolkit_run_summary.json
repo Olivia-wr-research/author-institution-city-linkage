@@ -1,0 +1,20 @@
+{
+  "files_created": [
+    "affiliation_quality_summary.csv",
+    "author_institution_links.csv",
+    "author_paper_links.csv",
+    "city_year_failures.csv",
+    "city_year_publication_counts.csv",
+    "cognitive_proximity_long.csv",
+    "cognitive_proximity_matrix.csv",
+    "cognitive_proximity_quality_summary.csv",
+    "collection_manifest.json",
+    "institution_city_mapping.csv",
+    "lagged_city_year_controls.csv",
+    "normalized_author_records.csv",
+    "publication_records.csv",
+    "source_comparison.csv"
+  ],
+  "network_access": false,
+  "run_id": "SYNTHETIC_RUN_2026_07_15"
+}

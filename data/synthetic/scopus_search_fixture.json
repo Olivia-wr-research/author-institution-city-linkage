@@ -1,0 +1,19 @@
+{
+  "search-results": {
+    "opensearch:totalResults": "2",
+    "entry": [
+      {
+        "eid": "2-s2.0-SYNTHETIC001",
+        "dc:title": "Synthetic Study of Demonstration Linkages",
+        "prism:coverDate": "2024-03-01",
+        "subtypeDescription": "Article"
+      },
+      {
+        "eid": "2-s2.0-SYNTHETIC002",
+        "dc:title": "Synthetic Review of City-Year Panels",
+        "prism:coverDate": "2023-08-15",
+        "subtypeDescription": "Review"
+      }
+    ]
+  }
+}

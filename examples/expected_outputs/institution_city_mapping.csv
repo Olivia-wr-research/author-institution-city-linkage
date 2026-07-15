@@ -1,0 +1,4 @@
+normalized_institution_key,institution_name,city,country,city_country_key
+missing_city_institute,Synthetic Missing City Institute,,Nowheria,|nowheria
+alpha_institute,Synthetic Alpha Institute Campus,SYNTH_CITY_ALPHA,Exampleland,synth_city_alpha|exampleland
+beta,Synthetic Beta Laboratory,SYNTH_CITY_BETA,Samplestan,synth_city_beta|samplestan

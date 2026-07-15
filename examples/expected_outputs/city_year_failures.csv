@@ -1,0 +1,4 @@
+city,country,year,failure_status,qa_notes
+SYNTH_CITY_FAIL,Nowheria,2022,permanent_failure,synthetic_transport_failure
+SYNTH_CITY_FAIL,Nowheria,2023,permanent_failure,synthetic_transport_failure
+SYNTH_CITY_FAIL,Nowheria,2024,permanent_failure,synthetic_transport_failure

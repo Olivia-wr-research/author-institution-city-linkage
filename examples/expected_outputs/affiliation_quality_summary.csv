@@ -1,0 +1,4 @@
+metric,value,notes
+scopus_affiliation_links,5,synthetic
+openalex_affiliation_links,4,synthetic
+links_with_missing_fields,1,paper_affiliation_only

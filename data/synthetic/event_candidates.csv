@@ -1,0 +1,4 @@
+candidate_id,city,country,event_year
+SYNTH_EVENT_001,SYNTH_CITY_ALPHA,Exampleland,2024
+SYNTH_EVENT_002,SYNTH_CITY_BETA,Samplestan,2024
+SYNTH_EVENT_003,SYNTH_CITY_EMPTY,Exampleland,2024

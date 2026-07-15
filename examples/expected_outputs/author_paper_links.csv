@@ -1,0 +1,5 @@
+source_author_id,normalized_author_key,source_work_id,normalized_work_key,author_position,duplicate_author_work_flag,qa_notes
+,,2-s2.0-SYNTHETIC001,synthetic001,3,false,synthetic_author_work
+SYNTH_AUTHOR_001,synth_author_001,2-s2.0-SYNTHETIC001,synthetic001,1,false,synthetic_author_work
+SYNTH_AUTHOR_001,synth_author_001,2-s2.0-SYNTHETIC001,synthetic001,4,true,duplicate_author_work
+SYNTH_AUTHOR_002,synth_author_002,2-s2.0-SYNTHETIC001,synthetic001,2,false,synthetic_author_work

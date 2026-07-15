@@ -1,0 +1,198 @@
+{
+  "network_access": false,
+  "requests": [
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_ALPHA\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_ALPHA_EXAMPLELAND_2022_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_ALPHA\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_ALPHA_EXAMPLELAND_2023_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_ALPHA\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_ALPHA_EXAMPLELAND_2024_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_BETA\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(MEDI) MULTIPAGE_CITY",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_BETA_SAMPLESTAN_2022_MEDI"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_BETA\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(MEDI) MULTIPAGE_CITY",
+      "start": 2,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_BETA_SAMPLESTAN_2022_MEDI"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_BETA\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(MEDI) MULTIPAGE_CITY",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_BETA_SAMPLESTAN_2023_MEDI"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_BETA\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(MEDI) MULTIPAGE_CITY",
+      "start": 2,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_BETA_SAMPLESTAN_2023_MEDI"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_BETA\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(MEDI) MULTIPAGE_CITY",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_BETA_SAMPLESTAN_2024_MEDI"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_BETA\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(MEDI) MULTIPAGE_CITY",
+      "start": 2,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_BETA_SAMPLESTAN_2024_MEDI"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_EMPTY\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP) EMPTY_CITY",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_EMPTY_EXAMPLELAND_2022_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_EMPTY\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP) EMPTY_CITY",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_EMPTY_EXAMPLELAND_2023_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_EMPTY\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP) EMPTY_CITY",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_EMPTY_EXAMPLELAND_2024_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 500,
+      "query": "ALL(\"SYNTH_CITY_FAIL\") AND AFFILCOUNTRY(\"Nowheria\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP) PERMANENT_FAIL",
+      "start": 0,
+      "status": "permanent_failure",
+      "task_id": "TASK_SYNTH_CITY_FAIL_NOWHERIA_2022_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 500,
+      "query": "ALL(\"SYNTH_CITY_FAIL\") AND AFFILCOUNTRY(\"Nowheria\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP) PERMANENT_FAIL",
+      "start": 0,
+      "status": "permanent_failure",
+      "task_id": "TASK_SYNTH_CITY_FAIL_NOWHERIA_2023_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 500,
+      "query": "ALL(\"SYNTH_CITY_FAIL\") AND AFFILCOUNTRY(\"Nowheria\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP) PERMANENT_FAIL",
+      "start": 0,
+      "status": "permanent_failure",
+      "task_id": "TASK_SYNTH_CITY_FAIL_NOWHERIA_2024_COMP"
+    },
+    {
+      "attempts": 2,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_RETRY\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(ENGI) RETRY_429",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_RETRY_EXAMPLELAND_2022_ENGI"
+    },
+    {
+      "attempts": 2,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_RETRY\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(ENGI) RETRY_429",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_RETRY_EXAMPLELAND_2023_ENGI"
+    },
+    {
+      "attempts": 2,
+      "http_status": 200,
+      "query": "ALL(\"SYNTH_CITY_RETRY\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(ENGI) RETRY_429",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SYNTH_CITY_RETRY_EXAMPLELAND_2024_ENGI"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"Springfield\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SPRINGFIELD_EXAMPLELAND_2022_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"Springfield\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SPRINGFIELD_EXAMPLELAND_2023_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"Springfield\") AND AFFILCOUNTRY(\"Exampleland\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SPRINGFIELD_EXAMPLELAND_2024_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"Springfield\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2022 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SPRINGFIELD_SAMPLESTAN_2022_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"Springfield\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2023 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SPRINGFIELD_SAMPLESTAN_2023_COMP"
+    },
+    {
+      "attempts": 1,
+      "http_status": 200,
+      "query": "ALL(\"Springfield\") AND AFFILCOUNTRY(\"Samplestan\") AND PUBYEAR = 2024 AND (DOCTYPE(ar) OR DOCTYPE(re)) AND SUBJAREA(COMP)",
+      "start": 0,
+      "status": "completed",
+      "task_id": "TASK_SPRINGFIELD_SAMPLESTAN_2024_COMP"
+    }
+  ],
+  "run_id": "SYNTHETIC_RUN_2026_07_15"
+}

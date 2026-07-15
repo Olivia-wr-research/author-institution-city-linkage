@@ -1,0 +1,42 @@
+{
+  "id": "https://openalex.org/SYNTH_WORK_001",
+  "doi": "https://doi.org/10.0000/synthetic-example-001",
+  "title": "Synthetic Study of Demonstration Linkages",
+  "authorships": [
+    {
+      "author": {"id": "SYNTH_AUTHOR_001", "display_name": "Synthetic Author Alpha"},
+      "institutions": [
+        {
+          "id": "SYNTH_INST_001",
+          "display_name": "Synthetic Alpha Institute",
+          "geo": {"city": "SYNTH_CITY_ALPHA", "country": "Exampleland"}
+        },
+        {
+          "id": "SYNTH_INST_004",
+          "display_name": "Synthetic Conflict Institute",
+          "geo": {"city": "SYNTH_CITY_GAMMA", "country": "Exampleland"}
+        }
+      ]
+    },
+    {
+      "author": {"id": "SYNTH_AUTHOR_002", "display_name": "Synthetic Author Beta"},
+      "institutions": [
+        {
+          "id": "SYNTH_INST_003",
+          "display_name": "Synthetic Beta Laboratory",
+          "geo": {"city": "SYNTH_CITY_DELTA", "country": "Samplestan"}
+        }
+      ]
+    },
+    {
+      "author": {"id": "SYNTH_AUTHOR_999", "display_name": "Synthetic OpenAlex Only"},
+      "institutions": [
+        {
+          "id": "SYNTH_INST_999",
+          "display_name": "Synthetic OpenAlex Only Center",
+          "geo": {"city": "SYNTH_CITY_ONLY", "country": "Onlyland"}
+        }
+      ]
+    }
+  ]
+}

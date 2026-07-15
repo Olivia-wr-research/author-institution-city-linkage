@@ -1,4 +1,4 @@
-name: author-institution-city-linkage
+name: scopus-research-data-toolkit
 channels:
   - defaults
 dependencies:
