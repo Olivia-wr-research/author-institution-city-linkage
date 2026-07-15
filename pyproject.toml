@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [{name = "Ran Wang"}]
-dependencies = ["pytest>=8"]
+dependencies = []
 
 [project.optional-dependencies]
 test = ["pytest>=8"]

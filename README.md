@@ -38,10 +38,10 @@ audit/                   release review records
 
 ## Installation
 
-Pip:
+Runtime editable install:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -e .
 ```
 
 Conda:
@@ -51,11 +51,13 @@ conda env create -f environment.yml
 conda activate scopus-research-data-toolkit
 ```
 
-Editable install:
+Test and development install:
 
 ```bash
 python -m pip install -e ".[test]"
 ```
+
+`pyproject.toml` is the dependency source of truth. `requirements.txt` is kept only as a development convenience for test tooling.
 
 ## Quick Start
 
